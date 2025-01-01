@@ -4,7 +4,9 @@ import mom from "../Icons/wired-lineal-1508-breastfeeding-hover-pinch (1).json"
 import money from "../Icons/wired-lineal-2075-fraud-hover-pinch.json"
 import success from "../Icons/wired-lineal-633-female-standing-morph-success.json"
 import Can from "../components/can/Can"
-
+import loot from "../Icons/wired-lineal-298-coins-hover-jump (1).json"
+import family from "../Icons/wired-lineal-1529-parenting-parents-family-hover-pinch (1).json"
+import business from "../Icons/wired-lineal-947-investment-hover-pinch.json"
 const SecondScreen = () => {
     return <>
         <div className={styles.title}>מזל טוב! את אמא</div>
@@ -34,15 +36,15 @@ const SecondScreen = () => {
         <div className={styles.row}>
             <Can 
                 text="להרוויח כבר מההתחלה הכנסה משמעותית שתאפשר לך להתפרנס בכבוד"
-                icon={money}
+                icon={loot}
             />
             <Can 
                 text="לקבוע את שעות העבודה שלך בהתאם לצרכי המשפחה ולהיות נוכחת בחיי הילדים"
-                icon={mom}
+                icon={family}
             />
             <Can 
                 text="לבנות עסק משגשג (גם מהבית) ולהגשים את החלומות שלך בדרך שלך"
-                icon={success}
+                icon={business}
             />
         </div>
     </>

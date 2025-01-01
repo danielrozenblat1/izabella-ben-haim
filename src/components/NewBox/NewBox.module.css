@@ -2,7 +2,7 @@
 .container {
     position: relative;
     padding: 2rem;
-    margin: 3rem 1rem;
+    margin: 0.5rem 1rem;
     background: linear-gradient(145deg, #fafaf8, #f4f2eb);
     border-radius: 28px 8px 28px 28px;
     box-shadow: 
@@ -108,7 +108,7 @@
 @media screen and (min-width: 451px) and (max-width: 768px) {
     .container {
         width: 400px;
-        margin: 3rem auto;
+        margin: 1rem auto;
         padding: 2.25rem;
     }
 
@@ -136,7 +136,7 @@
     .container {
         width: 280px;
         padding: 1.5rem 0.5rem;
-        margin: 2.5rem 0.5rem;
+        margin: 1rem 0.5rem;
         background: linear-gradient(145deg, #fafaf8, #f4f2eb);
         box-shadow: 
             inset 2px 2px 4px rgba(89, 86, 75, 0.15),
@@ -172,7 +172,7 @@
     .container {
         width: 320px;
         padding: 1.75rem 0.5rem;
-        margin: 2.75rem 0.75rem;
+        margin: 1rem 0.75rem;
         background: linear-gradient(145deg, #fafaf8, #f4f2eb);
         box-shadow: 
             inset 2px 2px 5px rgba(89, 86, 75, 0.15),
