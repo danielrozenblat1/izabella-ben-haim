@@ -42,7 +42,7 @@ const CourseSyllabus = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="קורס מתחילות">
       <header className={styles.header}>
         <h1 className={styles.title}>קורס מניקור ולק ג'ל</h1>
         <p className={styles.subtitle}>מקצוע שבינה מלאכותית לא תחליף לעולם!</p>

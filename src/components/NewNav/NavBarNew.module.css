@@ -101,7 +101,7 @@
   right: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(146deg, rgb(247, 235, 255) 15%, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 60%, rgb(247, 235, 255) 85%);
+  background: linear-gradient(146deg, rgb(234, 222, 216) 15%, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 60%, rgb(234, 222, 216) 85%);
   z-index: 1000;
   display: flex;
   justify-content: center;
