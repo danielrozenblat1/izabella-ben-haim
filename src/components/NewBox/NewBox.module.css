@@ -201,6 +201,39 @@
         line-height: 1.65;
     }
 }
+@media screen and (min-width: 450px) and (max-width: 650px) {
+    .container {
+        width: 320px;
+        padding: 1.75rem 0.5rem;
+        margin: 1.2rem 0.75rem;
+        background: linear-gradient(145deg, #fafaf8, #f4f2eb);
+        box-shadow: 
+            inset 2px 2px 5px rgba(89, 86, 75, 0.15),
+            inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+            0 5px 15px rgba(89, 86, 75, 0.06);
+    }
+
+    .iconWrapper {
+        width: 4.5rem;
+        height: 4.5rem;
+        top: -1.75rem;
+        right: -0.75rem;
+    }
+
+    .contentWrapper {
+        padding-top: 1.25rem;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+        width: 95%;
+        line-height: 1.65;
+    }
+}
 
 /* High-DPI Screens */
 @media screen and (-webkit-min-device-pixel-ratio: 2), 

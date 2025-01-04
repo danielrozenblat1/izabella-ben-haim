@@ -1,6 +1,6 @@
 .sliderContainer {
 
-    width:80%;
+    width:35%;
     margin: auto;
     height:auto;
     justify-content: center;
@@ -128,7 +128,7 @@ height: auto;
 @media only screen and (min-width: 350px) and (max-width: 450px) {
 
     .sliderContainer {
-        width: 55%;
+        width: 75%;
         margin: auto;
         height: auto;
         
@@ -192,7 +192,7 @@ height: auto;
 
     .sliderContainer {
 
-        width: 90%;
+        width: 85%;
         margin: auto;
     
         justify-content: center;

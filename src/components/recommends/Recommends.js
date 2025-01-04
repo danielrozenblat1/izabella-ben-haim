@@ -1,24 +1,12 @@
 import styles from "./Recommends.module.css"
-import result1 from "../../images/מאי שושן המלצה 1.png"
-import result2 from "../../images/מאי שושן המלצה 2.png"
-import result3 from "../../images/מאי שושן המלצה 3.png"
-import result4 from "../../images/מאי שושן המלצה 4.png"
-import result5 from "../../images/מאי שושן המלצה 5.png"
-import result6 from "../../images/מאי שושן המלצה 6.png"
-import result7 from "../../images/מאי שושן המלצה 7.png"
-import result8 from "../../images/מאי שושן המלצה 8.png"
-import result9 from "../../images/מאי שושן המלצה 9.png"
-import result10 from "../../images/מאי שושן המלצה 10.png"
-import result11 from  "../../images/מאי שושן המלצה 11.png"
-import result12 from  "../../images/מאי שושן המלצה 12.png"
-import result13 from  "../../images/מאי שושן המלצה 13.png"
-import result14 from  "../../images/מאי שושן המלצה 14.png"
-import result15 from  "../../images/מאי שושן המלצה 15.png"
+import result1 from "../../images/איזבל בן חיים תלמידות 1.png"
+import result2 from "../../images/איזבל בן חיים תלמידות 2.png"
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Button from "../button/Button"
-const Recommends=()=>{
+const Students=()=>{
     const sliderSettings = {
      
         infinite: true,
@@ -28,9 +16,7 @@ const Recommends=()=>{
    
         dots:false,
         
-        slidesToShow: window.innerWidth < 450 ? 1 :
-                 
-                      window.innerWidth <= 1050 ? 2 : 4,
+        slidesToShow: window.innerWidth < 450 ? 1 :2,
         slidesToScroll:1,
                      
       };
@@ -39,63 +25,14 @@ const Recommends=()=>{
           type: 'image',
           src: result1,
         },
-        {
-          type: 'image',
-          src: result11,
-        },
-        {
-          type: 'image',
-          src: result12,
-        },
-        {
-          type: 'image',
-          src: result13,
-        },
-        {
-          type: 'image',
-          src: result14,
-        },
-        {
-          type: 'image',
-          src: result15,
-        },
-        {
-          type: 'image',
-          src: result8,
-        },
-        {
-          type: 'image',
-          src: result10,
-        },
-        {
-          type: 'image',
-          src: result9,
-        },
+     
         {
           type: 'image',
           src: result2,
         },
-        {
-          type: 'image',
-          src: result3,
-        },
-        {
-          type: 'image',
-          src: result4,
-        }, 
-        
-        {
-          type: 'image',
-          src: result5,
-        },
-          {
-            type: 'image',
-            src: result6,
-          },
-          {
-            type: 'image',
-            src: result7,
-          },
+    
+  
+    
         ];  
 return <>
 <div className={styles.title} id="לקוחות ממליצות">תשמעי קצת מהן</div>
@@ -104,7 +41,7 @@ return <>
           {content.map((item, index) => (
             <div key={index} itemscope itemtype="http://schema.org/Review">
               {item.type === 'image' && (
-                <img src={item.src} className={styles.image1} alt={`מאי שושן לקוחה ממליצה מספר ${index + 1}`} itemprop="image"/>
+                <img src={item.src} className={styles.image1} alt={`איזבל בן חיים לקוחה ממליצה מספר ${index + 1}`} itemprop="image"/>
               )}
               {item.type === 'video' && (
                 <video
@@ -125,10 +62,10 @@ return <>
           ))}
         </Slider>
       </div>
+<Button text="איזבל, בואי נדבר!"/>
 
-<Button text="מאי אני רוצה לשמוע עוד"/>
 </>
 
 
 }
-export default Recommends
+export default Students

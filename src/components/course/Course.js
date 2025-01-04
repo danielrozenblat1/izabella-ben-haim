@@ -65,7 +65,7 @@ const CourseSyllabus = () => {
             </li>
             <li>
               <Heart className={styles.listIcon} />
-              <span>הכרת כלי עבודה ושימושי יסוד בתחום</span>
+              <span>הכרת כלי עבודה ומושגי יסוד בתחום</span>
             </li>
             <li>
               <Sparkles className={styles.listIcon} />
@@ -86,7 +86,7 @@ const CourseSyllabus = () => {
           <ul className={styles.list}>
             <li>
               <Sparkles className={styles.listIcon} />
-              <span>השלמת ציפור בטיפול ספור</span>
+              <span>השלמת ציפורן בעזרת טיפסים בכל השיטות</span>
             </li>
             <li>
               <Store className={styles.listIcon} />
@@ -140,7 +140,7 @@ const CourseSyllabus = () => {
             </li>
             <li>
               <CheckCircle className={styles.checkIcon} />
-              <span>הקורס משלב תרגול פיסי - גם על מודליסטיות וגם בבית (את תקבלי משימות אחרי כל מפגש ליישום)</span>
+              <span>הקורס משלב תרגול מעשי - גם על מודליסטיות וגם בבית (את תקבלי משימות אחרי כל מפגש ליישום)</span>
             </li>
             <li>
               <CheckCircle className={styles.checkIcon} />

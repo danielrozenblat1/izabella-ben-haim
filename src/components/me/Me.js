@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Me.module.css';
 import izabell from "../../images/איזבל בן חיים תמונה מרכזית.png";
-
+import students from "../../images/איזבל בן חיים תלמידות.png"
+import Students from '../recommends/Recommends';
 const AboutMe = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const AboutMe = () => {
         </div>
         <div className={styles.content}>
           <h1 className={styles.title}>איזבלה בן חיים</h1>
-          <div className={styles.subtitle}>"החלומות הכי גדולים מתחילים בהחלטה אחת אמיצה"</div>
+          <div className={styles.subtitle}>"ההצלחות הכי גדולות מתחילות בהחלטה אחת אמיצה"</div>
           <p className={styles.description}>
             במשך שנים רבות בניתי קריירה יציבה בחברת אשראי מובילה, מקום שחשבתי שיהיה ביתי המקצועי לתמיד. 
             אבל החיים הביאו איתם שינויים - הקמתי משפחה, הפכתי לאמא, וכשחזרתי מחופשת הלידה, משהו השתנה - היחס כלפי וכל מה שנתתי במקום העבודה "נמחק". 
@@ -26,6 +27,8 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
+    
+      <Students/>
     </>
   );
 };

@@ -292,7 +292,8 @@ color:black;
 
 @media (min-width: 451px) and (max-width: 550px) {
     .container {
-        padding: 0.8rem;
+        padding: 0;
+        width:80%;
     }
     .title {
         font-size: 1.8rem;

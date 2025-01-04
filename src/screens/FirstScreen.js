@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './FirstScreen.module.css';
 import GradientLoader from '../components/loader/Loader';
+import { ChevronDown } from 'lucide-react';
 
 const FirstScreen = (props) => {
     const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -74,7 +75,7 @@ const FirstScreen = (props) => {
         return <GradientLoader />;
     }
 
-    return (
+    return <>
         <div className={props.scrolled ? styles.containerP : styles.container}>
             <div className={styles.intro}>איזבלה בין חיים מציגה</div>
             
@@ -105,7 +106,10 @@ const FirstScreen = (props) => {
                 </div>
             </div>
         </div>
-    );
+        <div className={styles.arrowContainer}>
+        <ChevronDown className={styles.bounceArrow} size={40}  color="#686868" strokeWidth={1} />
+      </div>
+ </>
 };
 
 export default FirstScreen;
