@@ -9,6 +9,7 @@ import ByMe from './components/ByMe/ByMe';
 import ForthScreen from './screens/ForthScreen';
 import { useEffect, useState } from 'react';
 import FifthScreen from './screens/FifthScreen';
+import FixedFirstScreen from './screens/FixedFirstScreen';
 
 function App() {
 
@@ -35,7 +36,8 @@ function App() {
   };
   return <>
   <NavBarNew/>
-  <FirstScreen scrolled={scrolled}/>
+  {/* <FirstScreen scrolled={scrolled}/> */}
+  <FixedFirstScreen/>
   <SecondScreen/>
   <ThirdScreen/>
   <AboutMe/>

@@ -10,3 +10,9 @@
     font-weight:300;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Comorant';
+    src: url('./CormorantGaramond-Light.ttf') format('truetype');
+    font-weight:800;
+    font-style: normal;
+  }

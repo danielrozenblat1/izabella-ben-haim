@@ -9,7 +9,7 @@ const NavBarNew = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [isSticky, setIsSticky] = useState(false);
+  const [isSticky, setIsSticky] = useState(true); // Initialize as true
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -19,11 +19,8 @@ const NavBarNew = () => {
     const handleScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          if (window.scrollY > 0) {
-            setIsSticky(true);
-          } else {
-            setIsSticky(false);
-          }
+          // Always keep sticky true regardless of scroll position
+          setIsSticky(true);
           lastScrollY = window.scrollY;
           ticking = false;
         });
@@ -63,7 +60,7 @@ const NavBarNew = () => {
   const menuItems = [ 'קורס מתחילות','שאלות תשובות', 'מי אני'];
 
   return (
-    <nav className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
+    <nav className={`${styles.navbar} ${styles.sticky}`}>
       {windowWidth <= 850 && (
         <div className={styles.hamburger} onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes /> : <FaBars />}
@@ -119,7 +116,6 @@ const NavBarNew = () => {
       <div className={styles.socialIcons}>
         <a href="https://www.instagram.com/izabella_ben_haim/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         <a onClick={handleClick}><FaWhatsapp /></a>
-        
       </div>
     </nav>
   );

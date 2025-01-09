@@ -1,53 +1,20 @@
-/* IconTextComponent.module.css */
 .container {
     position: relative;
     padding: 2rem;
     margin: 0.5rem 1rem;
-    background: linear-gradient(145deg, #fafaf8, #f4f2eb);
-    border-radius: 28px 8px 28px 28px;
+    background: linear-gradient(145deg, #ffffff, #efe2d3);
+    border-radius: 20px;
     box-shadow: 
-        inset 2px 2px 6px rgba(229, 228, 224, 0.15),
-        inset -2px -2px 6px rgba(255, 255, 255, 0.2),
-        0 6px 16px rgba(89, 86, 75, 0.06);
+        inset 4px 4px 12px rgba(170, 150, 130, 0.3),  
+        inset -4px -4px 12px rgba(255, 255, 255, 0.7), 
+        0 6px 16px rgba(176, 156, 136, 0.25);
     overflow: visible;
     direction: rtl;
     width: 350px;
     transition: all 0.3s ease;
 }
 
-.container:hover {
-    box-shadow: 
-        inset 2px 2px 6px rgba(229, 228, 224, 0.15),
-        inset -2px -2px 6px rgba(255, 255, 255, 0.2),
-        0 8px 20px rgba(89, 86, 75, 0.08);
-}
 
-.container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: inherit;
-    padding: 2px;
-    background: linear-gradient(135deg, rgba(157, 163, 140, 0.15), rgba(126, 130, 110, 0.08));
-    -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
-}
-
-.container::after {
-    content: '';
-    position: absolute;
-    inset: 1px;
-    background: linear-gradient(to right bottom, rgba(147, 143, 128, 0.08), transparent);
-    border-radius: inherit;
-    pointer-events: none;
-}
 
 .iconWrapper {
     position: absolute;
@@ -55,7 +22,7 @@
     right: -1rem;
     width: 5rem;
     height: 5rem;
-    filter: drop-shadow(0 3px 6px rgba(89, 86, 75, 0.12));
+    filter: drop-shadow(0 3px 6px rgba(196, 186, 171, 0.12));
     z-index: 2;
     transition: transform 0.3s ease;
 }
@@ -83,7 +50,7 @@
     font-weight: 700;
     letter-spacing: -0.01em;
     text-align: right;
-    color: #2b2b27;
+   
     text-rendering: optimizeLegibility;
 }
 
@@ -94,7 +61,7 @@
     margin: 0;
     font-weight: 400;
     text-align: right;
-    color: #454540;
+    color: #362e23;  /* חום בהיר יותר לטקסט */
     max-width: 95%;
     text-rendering: optimizeLegibility;
 }
@@ -129,19 +96,13 @@
     }
 }
 
-
-
 /* Mobile - Extra Small Screens */
 @media screen and (max-width: 349px) {
     .container {
         width: 280px;
         padding: 1.5rem 0.5rem;
         margin: 1rem 0.5rem;
-        background: linear-gradient(145deg, #fafaf8, #f4f2eb);
-        box-shadow: 
-            inset 2px 2px 4px rgba(89, 86, 75, 0.15),
-            inset -2px -2px 4px rgba(255, 255, 255, 0.2),
-            0 4px 12px rgba(89, 86, 75, 0.06);
+
     }
 
     .iconWrapper {
@@ -172,12 +133,8 @@
     .container {
         width: 320px;
         padding: 1.75rem 0.5rem;
-        margin: 1rem 0.75rem;
-        background: linear-gradient(145deg, #fafaf8, #f4f2eb);
-        box-shadow: 
-            inset 2px 2px 5px rgba(89, 86, 75, 0.15),
-            inset -2px -2px 5px rgba(255, 255, 255, 0.2),
-            0 5px 15px rgba(89, 86, 75, 0.06);
+        margin: 1.5rem 0.75rem;
+   
     }
 
     .iconWrapper {
@@ -201,16 +158,13 @@
         line-height: 1.65;
     }
 }
+
 @media screen and (min-width: 450px) and (max-width: 650px) {
     .container {
         width: 320px;
         padding: 1.75rem 0.5rem;
         margin: 1.2rem 0.75rem;
-        background: linear-gradient(145deg, #fafaf8, #f4f2eb);
-        box-shadow: 
-            inset 2px 2px 5px rgba(89, 86, 75, 0.15),
-            inset -2px -2px 5px rgba(255, 255, 255, 0.2),
-            0 5px 15px rgba(89, 86, 75, 0.06);
+       
     }
 
     .iconWrapper {
@@ -235,61 +189,7 @@
     }
 }
 
-/* High-DPI Screens */
-@media screen and (-webkit-min-device-pixel-ratio: 2), 
-       screen and (min-resolution: 192dpi) {
-    .container {
-        box-shadow: 
-            inset 2px 2px 6px rgba(229, 228, 224, 0.18),
-            inset -2px -2px 6px rgba(255, 255, 255, 0.25),
-            0 6px 16px rgba(89, 86, 75, 0.08);
-    }
-}
 
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    .container {
-        background: linear-gradient(145deg, #2a2a2a, #333333);
-        box-shadow: 
-            inset 2px 2px 6px rgba(0, 0, 0, 0.2),
-            inset -2px -2px 6px rgba(255, 255, 255, 0.05),
-            0 6px 16px rgba(0, 0, 0, 0.15);
-    }
-
-    .title {
-        color: #e0e0e0;
-    }
-
-    .description {
-        color: #b0b0b0;
-    }
-
-    .container:hover {
-        box-shadow: 
-            inset 2px 2px 6px rgba(0, 0, 0, 0.2),
-            inset -2px -2px 6px rgba(255, 255, 255, 0.05),
-            0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-}
-
-/* Print Styles */
-
-
-/* Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-    .container,
-    .iconWrapper {
-        transition: none;
-    }
-
-    .container:hover {
-        transform: none;
-    }
-
-    .iconWrapper:hover {
-        transform: none;
-    }
-}
 
 /* Animation Keyframes */
 @keyframes slideInRight {

@@ -3,18 +3,17 @@
   align-items: center;
   margin: 3% auto;
   color: black;
-
   padding: 0.5rem 1rem;
+  background: linear-gradient(145deg, #ffffff, #e3d2bf);
   border-radius: 1rem;
   box-shadow: 
-  2px 2px 10px rgba(225, 218, 207, 0.8),  /* צל חיצוני בהיר מותאם לרקע */
-  -2px -2px 10px rgba(234, 230, 223, 0.6),  /* צל חיצוני שמנת עדין */
-  inset 2px 2px 5px  rgba(128, 140, 113, 0.2),  /* צל פנימי בז' עדין */
-  inset -2px -2px 5px rgba(128, 140, 113, 0.2);  /* צל פנימי שמנת-בז' */
+      inset 2px 2px 6px rgba(183, 147, 115, 0.25),
+      inset -2px -2px 6px rgba(255, 255, 255, 0.6),
+      3px 3px 8px rgba(108, 83, 62, 0.15),
+      -1px -1px 4px rgba(255, 255, 255, 0.7);
   direction: rtl;
   width: 320px;
 }
-
 .text {
   font-family: 'AssistantR', sans-serif;
   font-size: 1.1rem;

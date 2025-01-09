@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Me.module.css';
-import izabell from "../../images/איזבל בן חיים תמונה מרכזית.png";
+import izabell from "../../images/איזבל בן חיים תמונת תדמית.png";
 import students from "../../images/איזבל בן חיים תלמידות.png"
 import Students from '../recommends/Recommends';
 const AboutMe = () => {

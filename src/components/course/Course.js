@@ -13,6 +13,8 @@ import {
   Send,
   CheckCircle
 } from 'lucide-react';
+import EmphasisSection from '../Bonus/Bonus';
+import Button from '../button/Button';
 
 const CourseSyllabus = () => {
   useEffect(() => {
@@ -120,39 +122,8 @@ const CourseSyllabus = () => {
           </ul>
         </section>
 
-        <section className={styles.emphasisSection}>
-          <h2 className={styles.emphasisTitle}>
-            <CheckCircle className={styles.icon} />
-            חשוב לי להדגיש:
-          </h2>
-          <ul className={styles.emphasisList}>
-            <li>
-              <CheckCircle className={styles.checkIcon} />
-              <span>הקורס הוא אחת על אחת ויהיה לך את כל הזמן שבעולם לשאול שאלות ואת כל היחס שתצטרכי ממני</span>
-            </li>
-            <li>
-              <CheckCircle className={styles.checkIcon} />
-              <span>אני עוברת איתך בקורס גם על הפן המנטלי בלהיות עצמאית</span>
-            </li>
-            <li>
-              <CheckCircle className={styles.checkIcon} />
-              <span>אני זמינה לך גם אחרי הקורס לכל שאלה והתייעצות</span>
-            </li>
-            <li>
-              <CheckCircle className={styles.checkIcon} />
-              <span>הקורס משלב תרגול מעשי - גם על מודליסטיות וגם בבית (את תקבלי משימות אחרי כל מפגש ליישום)</span>
-            </li>
-            <li>
-              <CheckCircle className={styles.checkIcon} />
-              <span>את מקבלת ערכה שמספיקה לפחות ל10 הלקוחות הראשונות</span>
-            </li>
-          </ul>
-        </section>
-
-        <button onClick={handleWhatsAppClick} className={styles.ctaButton}>
-          <Send className={styles.buttonIcon} />
-          לפרטים נוספים לחצי כאן
-        </button>
+   <EmphasisSection/>
+   <Button text="לפרטים נוספים לחצי כאן"/>
       </div>
     </div>
   );
