@@ -62,7 +62,7 @@ return <>
           ))}
         </Slider>
       </div>
-<Button text="איזבל, בואי נדבר!"/>
+<Button text="איזבלה, בואי נדבר!"/>
 
 </>
 
