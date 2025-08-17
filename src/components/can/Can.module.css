@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: 3% auto;
+  color: black;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(145deg, #ffffff, #e3d2bf);
+  border-radius: 1rem;
+  box-shadow: 
+      inset 2px 2px 6px rgba(183, 147, 115, 0.25),
+      inset -2px -2px 6px rgba(255, 255, 255, 0.6),
+      3px 3px 8px rgba(108, 83, 62, 0.15),
+      -1px -1px 4px rgba(255, 255, 255, 0.7);
+  direction: rtl;
+  width: 320px;
+}
+.text {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.1rem;
+  direction: rtl;
+  margin-right: 10px;
+  width: 80%;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.icon {
+  width: 20%;
+  filter: drop-shadow(2px 2px 3px rgba(117, 117, 117, 0.5));
+}
+
+/* מסך קטן מ-350 פיקסלים */
+@media (max-width: 349px) {
+  .container {
+      width: 270px;
+      padding: 0.4rem 0.8rem;
+  }
+
+  .text {
+      width: 100%;
+      font-size: 1rem;
+
+  }
+
+  .icon {
+      width: 30%;
+      text-align: center;
+  }
+}
+
+/* מסך בין 350 ל-450 פיקסלים */
+@media (min-width: 350px) and (max-width: 450px) {
+  .container {
+      width: 300px;
+      padding: 0.2rem 0.8rem;
+  }
+
+  .text {
+      width: 100%;
+      font-size: 1rem;
+
+  }
+
+  .icon {
+      width: 30%;
+      text-align: center;
+  }
+}

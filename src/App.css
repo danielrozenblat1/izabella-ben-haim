@@ -1,0 +1,9 @@
+@import url("./fonts/font.css");
+body{
+  overflow-x: hidden;
+  background: linear-gradient(165deg, 
+    rgb(251, 245, 235) 15%, /* בז' שמנת בהיר */
+    rgb(234, 230, 223) 50%, /* שמנת טהור כמעט */
+    rgb(236, 229, 216) 85% /* בז' שמנת עם נגיעת זית עדינה */
+);
+}

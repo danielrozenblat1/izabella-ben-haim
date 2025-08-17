@@ -1,0 +1,146 @@
+/* Default styles */
+.title {
+    font-family: 'Assistant', sans-serif;
+    font-size: 2rem;
+    margin: 2% auto;
+    text-align: center;
+    direction: rtl;
+    font-weight: bold;
+}
+
+.description {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.4rem;
+    direction: rtl;
+    width:90%;
+    text-align: center;
+    margin: 2% auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 3% auto;
+}
+
+/* Below 350px */
+@media screen and (max-width: 349px) {
+    .title {
+        font-size: 1.3rem;
+        margin: 4% auto;
+    }
+    
+    .description {
+        font-size: 1rem;
+        margin: 4% auto;
+    }
+
+}
+
+/* 350px - 450px */
+@media screen and (min-width: 350px) and (max-width: 450px) {
+    .title {
+        font-size: 1.4rem;
+        margin: 3.5% auto;
+    }
+    
+    .description {
+        font-size: 1.1rem;
+        margin: 3.5% auto;
+    }
+
+}
+
+/* 450px - 550px */
+@media screen and (min-width: 451px) and (max-width: 550px) {
+    .title {
+        font-size: 1.5rem;
+        margin: 3% auto;
+    }
+    
+    .description {
+        font-size: 1.2rem;
+        margin: 3% auto;
+    }
+ 
+}
+
+/* 550px - 650px */
+@media screen and (min-width: 551px) and (max-width: 650px) {
+    .title {
+        font-size: 1.6rem;
+    }
+    
+    .description {
+        font-size: 1.25rem;
+    }
+
+}
+
+/* 650px - 750px */
+@media screen and (min-width: 651px) and (max-width: 750px) {
+    .title {
+        font-size: 1.7rem;
+    }
+    
+    .description {
+        font-size: 1.3rem;
+    }
+}
+
+/* 750px - 850px */
+@media screen and (min-width: 751px) and (max-width: 850px) {
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .description {
+        font-size: 1.35rem;
+    }
+}
+
+/* 850px - 950px */
+@media screen and (min-width: 851px) and (max-width: 950px) {
+    .title {
+        font-size: 1.9rem;
+    }
+    
+    .description {
+        font-size: 1.37rem;
+    }
+}
+
+/* 950px - 1050px */
+@media screen and (min-width: 951px) and (max-width: 1050px) {
+    .title {
+        font-size: 1.95rem;
+    }
+    
+    .description {
+        font-size: 1.38rem;
+    }
+}
+
+/* 1050px - 1150px */
+@media screen and (min-width: 1051px) and (max-width: 1150px) {
+    .title {
+        font-size: 1.97rem;
+    }
+    
+    .description {
+        font-size: 1.39rem;
+    }
+}
+
+/* 1150px - 1250px */
+@media screen and (min-width: 1151px) and (max-width: 1250px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .description {
+        font-size: 1.4rem;
+    }
+}

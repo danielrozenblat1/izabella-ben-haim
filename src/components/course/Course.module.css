@@ -1,0 +1,388 @@
+/* CourseSyllabus.module.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    direction: rtl;
+    color: #5C584A;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-bottom: 0.2rem;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    font-family: 'Assistant', sans-serif;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #8B8574, transparent);
+}
+
+.title {
+    font-size: 2.5rem;
+color:black;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'AssistantR', sans-serif;
+    font-weight: 300;
+}
+
+.section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #FDFBF7;
+    border: 1px solid #D8D3C9;
+    border-radius: 12px;
+    box-shadow: 
+        0 10px 20px rgba(92, 88, 74, 0.1),
+        0 6px 6px rgba(92, 88, 74, 0.1),
+        0 0 100px -20px rgba(92, 88, 74, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.emphasisSection {
+    margin-bottom: 3rem;
+    padding: 2.5rem;
+    background-color: #FAF8F4;
+    border: 1px solid #E5E0D8;
+    border-radius: 16px;
+    box-shadow: 
+        0 15px 25px rgba(92, 88, 74, 0.08),
+        0 8px 10px rgba(92, 88, 74, 0.05),
+        0 0 120px -25px rgba(92, 88, 74, 0.12);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.emphasisSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #6B6557, #8B8574);
+    opacity: 0.8;
+}
+
+.section.visible, .emphasisSection.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8B8574, #6B6557);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.section:hover::before {
+    opacity: 1;
+}
+
+.sectionTitle {
+    font-size: 1.5rem;
+    color: #4A463C;
+    margin-bottom: 1.5rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Assistant', sans-serif;
+}
+
+.emphasisTitle {
+    font-size: 1.6rem;
+    color: #3D3A33;
+    margin-bottom: 2rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.icon {
+    color: #8B8574;
+    stroke-width: 1.5;
+}
+
+.list, .emphasisList {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 1.2rem;
+    padding: 0.8rem 1rem;
+    position: relative;
+    font-family: 'AssistantR', sans-serif;
+    line-height: 1.6;
+    color: #5C584A;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(246, 244, 239, 0.5);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.emphasisList li {
+    margin-bottom: 1.4rem;
+    padding: 1rem 1.2rem;
+    position: relative;
+    font-family: 'AssistantR', sans-serif;
+    line-height: 1.7;
+    color: #4A463C;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(92, 88, 74, 0.05);
+    border: 1px solid rgba(139, 133, 116, 0.08);
+}
+
+.list li:hover {
+    background-color: rgba(246, 244, 239, 0.8);
+    transform: translateX(-5px);
+}
+
+.emphasisList li:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateX(-5px);
+    box-shadow: 0 4px 8px rgba(92, 88, 74, 0.08);
+}
+
+.listIcon {
+    color: #8B8574;
+    min-width: 20px;
+    height: 20px;
+    stroke-width: 1.5;
+}
+
+.checkIcon {
+    color: #4A463C;
+    min-width: 22px;
+    height: 22px;
+    stroke-width: 2.2;
+}
+
+.ctaButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 4rem auto 0;
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+    color: #FDFBF7;
+    background: linear-gradient(135deg, #8B8574 0%, #6B6557 100%);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Assistant', sans-serif;
+}
+
+.buttonIcon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.5;
+}
+
+.ctaButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(92, 88, 74, 0.2);
+    background: linear-gradient(135deg, #6B6557 0%, #8B8574 100%);
+}
+
+.ctaButton:active {
+    transform: translateY(-1px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 350px) {
+    .container {
+        padding: 0.5rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .section, .emphasisSection {
+        padding: 1rem;
+    }
+    .list li, .emphasisList li {
+        padding: 0.4rem 0.6rem;
+    }
+    .ctaButton {
+        max-width: 90%;
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+    }
+ 
+}
+
+@media (min-width: 351px) and (max-width: 450px) {
+    .container {
+        padding: 0.7rem;
+    }
+    .title {
+        font-size: 1.7rem;
+    }
+    .section, .emphasisSection {
+        padding: 1.2rem;
+    }
+    .ctaButton {
+        max-width: 85%;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 550px) {
+    .container {
+        padding: 0;
+        width:80%;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .section, .emphasisSection {
+        padding: 1.3rem;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 650px) {
+    .container {
+        padding: 1rem;
+    }
+    .title {
+        font-size: 1.9rem;
+    }
+    .section, .emphasisSection {
+        padding: 1.4rem;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 750px) {
+    .container {
+        padding: 1.2rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .section, .emphasisSection {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 850px) {
+    .container {
+        padding: 1.4rem;
+    }
+    .title {
+        font-size: 2.1rem;
+    }
+    .section, .emphasisSection {
+        padding: 1.6rem;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 950px) {
+    .container {
+        padding: 1.6rem;
+    }
+    .title {
+        font-size: 2.2rem;
+    }
+    .section, .emphasisSection {
+        padding: 1.7rem;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1050px) {
+    .container {
+        padding: 1.8rem;
+    }
+    .title {
+        font-size: 2.3rem;
+    }
+    .section, .emphasisSection {
+        padding: 1.8rem;
+    }
+}
+
+@media (min-width: 1051px) and (max-width: 1150px) {
+    .container {
+        padding: 2rem;
+    }
+    .title {
+        font-size: 2.4rem;
+    }
+    .section, .emphasisSection {
+        padding: 1.9rem;
+    }
+}
+
+@media (min-width: 1151px) and (max-width: 1250px) {
+    .container {
+        padding: 2.2rem;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .section, .emphasisSection {
+        padding: 2rem;
+    }
+}
